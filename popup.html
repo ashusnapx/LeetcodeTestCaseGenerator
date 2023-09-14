@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LeetCode Profile Comparison</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LeetCode_Logo_black_with_text.svg/2560px-LeetCode_Logo_black_with_text.svg.png" alt="LeetCode Logo" id="kk">
+                <h1>LeetCode Profile Comparison</h1>
+                <p>Version 1.0.0.0</p>
+            </div>
+            <div id="userProfiles"></div>
+            <div id="comparison">
+                <h2>Compare LeetCode Profiles</h2>
+                <div class="profile-options">
+                    <input type="radio" name="profileOption" id="singleProfile" checked>
+                    <label for="singleProfile">Single Profile</label>
+                    <input type="radio" name="profileOption" id="multiProfile">
+                    <label for="multiProfile">Multi Profile</label>
+                    <select id="numProfiles" style="display:none;">
+                        <option value="2">2 Profiles</option>
+                        <option value="3">3 Profiles</option>
+                        <option value="4">4 Profiles</option>
+                        <option value="5">5 Profiles</option>
+                    </select>
+                </div>
+                <div id="singleProfileInput">
+                    <input type="text" id="username" placeholder="Enter Username or Profile Link">
+                </div>
+                <div id="multiProfileInput" style="display:none;">
+                    <input type="text" id="username1" placeholder="User 1">
+                    <input type="text" id="username2" placeholder="User 2">
+                    <input type="text" id="username3" placeholder="User 3">
+                    <input type="text" id="username4" placeholder="User 4">
+                    <input type="text" id="username5" placeholder="User 5">
+                </div>
+                <button id="compareBtn">Compare</button>
+                <button id="clearComparisonBtn">Clear Comparison</button>
+            </div>
+            <div class="footer">
+                <p>Baked with ❤️ by Ashutosh Kumar</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

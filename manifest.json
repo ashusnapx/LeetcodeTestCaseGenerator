@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "LeetCode Stalker",
+    "version": "1.0",
+    "description": "Track LeetCode progress",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "https://faisal-leetcode-api.cyclic.app/*",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://leetcode.com/users/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    }
+}
